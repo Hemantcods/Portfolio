@@ -36,7 +36,7 @@ function Skills() {
           {Array.from("Skills & Experience").map((char, i) => (
             <span
               key={i}
-              className="inline-block transition-transform duration-200 hover:text-orange-400 hover:scale-y-90 hover:animate-bounce"
+              className="inline-block transition-transform duration-200 ease-in-out hover:text-orange-400  hover:animate-bounce"
               style={{ display: char === " " ? "inline-block" : undefined, minWidth: char === " " ? "0.5em" : undefined }}
             >
               {char}
@@ -46,11 +46,11 @@ function Skills() {
             {`
               .bounce-stretch:hover {
                 animation: bounce-stretch 0.4s;
-                transform: scaleY(1.5) translateY(-0.5em);
+                transform: scaleY(0.5) translateY(-0.5em);
               }
               @keyframes bounce-stretch {
-                0% { transform: scaleY(1) translateY(0); }
-                50% { transform: scaleY(1.5) translateY(-0.5em); }
+                0% { transform: scaleY(1) translateY(0) translateX(0); }
+                50% { transform: scaleY(1) translateY(-0.5em) translateX(0.5); }
                 100% { transform: scaleY(1) translateY(0); }
               }
             `}
