@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import {useNavigate} from "react-router-dom"
+import useScrollDirection from '../Functions/Scrolldetect'
+
+
 
 const roles = ["Python Developer", "Editor", "Web Developer"]
 
@@ -8,6 +12,17 @@ function Home() {
   const [charIndex, setCharIndex] = useState(0)
   const [deleting, setDeleting] = useState(false)
   const [stopped, setStopped] = useState(false)
+  const direction = useScrollDirection();
+  const navigate=useNavigate()
+
+
+    useEffect(() => {
+    if (direction) {
+      if(direction==="down"){
+        navigate("/about")
+    }
+  }
+  }, [direction]);
 
   useEffect(() => {
     if (stopped) return;
@@ -65,5 +80,6 @@ function Home() {
     </div>
   )
 }
+
 
 export default Home

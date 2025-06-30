@@ -2,7 +2,10 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import useScrollDirection from '../Functions/Scrolldetect';
 
-function Projects() {
+
+
+
+function Skills() {
   const direction = useScrollDirection();
   const navigate=useNavigate()
 
@@ -10,17 +13,19 @@ function Projects() {
     useEffect(() => {
     if (direction) {
       if(direction==="down"){
-        navigate("/contact")
-    }else if(direction==="up"){
-      navigate("/skills")
+        navigate("/projects")
+    }else{
+      navigate("/about")
     }
   }
   }, [direction]);
   return (
-    <div className='text-white'>
-      Projects
-    </div>
+    <>
+      <div className='grayscale static'>
+        <img className='relative top-100' src="https://skillicons.dev/icons?i=js,html,css,react,py,pytorch,vite,mongodb,wasm)](https://skillicons.dev" alt=""  />
+      </div>
+    </>
   )
 }
 
-export default Projects
+export default Skills
