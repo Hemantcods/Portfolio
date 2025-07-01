@@ -15,6 +15,11 @@ function Home() {
   const direction = useScrollDirection();
   const navigate=useNavigate()
 
+  const [mounted, setMounted] = useState(false);
+  
+    useEffect(() => {
+      setMounted(true);
+    }, []);
 
     useEffect(() => {
     if (direction) {
@@ -68,9 +73,11 @@ function Home() {
         `}
       </style>
       <div className='flex'>
-        <div className="left static">
-          <div className="intro text-6xl font-mono absolute top-80 left-10 "> Hi I am Hemant</div>
-          <div className="role text-6xl font-mono absolute top-100 left-10">
+        <div className="left static ">
+          <div className={`intro text-6xl font-mono absolute top-80 left-10 transition-all duration-700
+        ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 '} `}> Hi I am Hemant</div>
+          <div className={`role text-6xl font-mono absolute top-100 left-10 transition-all duration-700 delay-200
+        ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 '}`}>
             I am a {write}
             <span className="blinking-cursor">|</span>
           </div>

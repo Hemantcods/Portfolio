@@ -27,7 +27,7 @@ function Skills() {
   }, [direction]);
   return (
     <>
-      <div className={`flex flex-col items-center justify-center pt-16 pb-8 scale-125 transition-all duration-700
+      <div className={`flex flex-col items-center justify-center pt-50  scale-125 transition-all duration-700
         ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 '}`}>
         <div className="text-gray-400 text-lg italic mb-2 text-center max-w-xl">
           “A problem is a chance for you to do your best.”
@@ -36,7 +36,7 @@ function Skills() {
           {Array.from("Skills & Experience").map((char, i) => (
             <span
               key={i}
-              className="inline-block transition-transform duration-200 ease-in-out hover:text-orange-400  hover:animate-bounce"
+              className="inline-block transition-transform duration-400 ease-in-out hover:text-orange-400  hover:animate-bounce"
               style={{ display: char === " " ? "inline-block" : undefined, minWidth: char === " " ? "0.5em" : undefined }}
             >
               {char}
