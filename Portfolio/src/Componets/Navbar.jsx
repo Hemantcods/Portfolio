@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 function NavBar() {
@@ -18,20 +19,39 @@ function NavBar() {
     return () => { isMounted = false }
   }, [])
 
-  const navigate=useNavigate()
-  const navigator=()=>{
+  const navigate = useNavigate()
+  const navigator = () => {
     navigate("/contact")
   }
   return (
-  <div className='flex items-center fixed top-0 left-0 w-full z-50 text-white bg-transparent'>
-    <div className="logo font-bold text-3xl p-10 absolute left-0 top-3">&lt; H{text} &gt;</div>
-    <div>
-      <button className='font-bold text-2xl border-2 absolute right-0 top-3 m-12 mt-10 p-2 rounded-3xl pl-4 pr-4 shadow-white shadow-md transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:scale-110 hover:border-white'  onClick={navigator}>
-        Contact
-      </button>
-    </div>
-  </div>
-)
+    <>
+      <div className='flex static justify-between '>
+        <div className="logo h-3 w-10 relative top-4 left-4 cursor-pointer"><img className='' src="..\src\assets\Logo.svg" alt="" /></div>
+        <div className="btns  relative top-4  ">
+          <ul className='flex font-anonymouspro uppercase gap-10'>
+            <li>
+              <NavLink to='/' className={({ isActive }) => `${isActive ? 'text-white' : 'text-gray-400'}`}>overview</NavLink>
+            </li>
+            <li>
+              <NavLink to='/about' className={({ isActive }) => `${isActive ? 'text-white' : 'text-gray-400'}`}>about</NavLink>
+            </li>
+            <li>
+              <NavLink to='/skills' className={({ isActive }) => `${isActive ? 'text-white' : 'text-gray-400'}`}>skills</NavLink>
+            </li>
+            <li>
+              <NavLink to='/projects' className={({ isActive }) => `${isActive ? 'text-white' : 'text-gray-400'}`}>projects</NavLink>
+            </li>
+            <li>
+              <NavLink to='/contact' className={({ isActive }) => `${isActive ? 'text-white' : 'text-gray-400'}`}>contact</NavLink>
+            </li>
+          </ul>
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default NavBar
