@@ -84,7 +84,7 @@ function Home() {
         </div>
         <div className="right"></div>
       </div>
-    </div>
+    </div>   
   )
 }
 
