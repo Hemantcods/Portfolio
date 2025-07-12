@@ -18,7 +18,7 @@ const Sendbtn = ({ initName = 'Submit', hoverName = 'Submiting', doneName = 'Sub
 
   const handleClick = () => {
     if (status === 'idle') setStatus('loading');
-    if (onClick) onClick();
+    if (status === 'idle') if (onClick) onClick();
   };
 
   return (
