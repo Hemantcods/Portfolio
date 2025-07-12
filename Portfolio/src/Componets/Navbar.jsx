@@ -26,7 +26,7 @@ function NavBar() {
   return (
     <>
       <div className='flex static justify-between '>
-        <div className="logo h-3 w-10 relative top-4 left-4 cursor-pointer"><img className='' src="..\src\assets\Logo.svg" alt="" /></div>
+        <div className="logo h-3 w-10 relative top-4 left-4 cursor-pointer"><img className='' src="..\src\icons\Logo.svg" alt="" /></div>
         <div className="btns  relative top-4  ">
           <ul className='flex font-anonymouspro uppercase gap-10'>
             <li>

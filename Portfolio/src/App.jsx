@@ -14,9 +14,7 @@ function App() {
   return (
     <>
       <div
-        className="h-screen w-screen bg-black overflow-hidden"
-        
-      >
+        className="h-screen w-screen bg-black overflow-hidden">
         <NavBar />
         <SideBar />
         <Routes>
