@@ -15,7 +15,7 @@ const navLinks = [
     type: "resume",
   },
 ];
-const NumberOfWallpapers=5
+const NumberOfWallpapers=3
 const navIcons = [
   {
     id: 1,
