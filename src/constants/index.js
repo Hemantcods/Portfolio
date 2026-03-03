@@ -15,7 +15,7 @@ const navLinks = [
     type: "resume",
   },
 ];
-
+const NumberOfWallpapers=5
 const navIcons = [
   {
     id: 1,
@@ -105,16 +105,12 @@ const techStack = [
     items: ["React.js", "Next.js", "TypeScript"],
   },
   {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Tailwind CSS", "CSS","Material UI","Figma"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express"],
   },
   {
     category: "Database",
@@ -213,6 +209,7 @@ export {
   socials,
   photosLinks,
   gallery,
+  NumberOfWallpapers
 };
 
 const WORK_LOCATION = {

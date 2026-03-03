@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import { NumberOfWallpapers } from "@constants";
 const FONT_WEIGHTS = {
     subtitle:{min:100,max:400,default:100},
     title:{min:400,max:900,default:400},
@@ -16,6 +17,12 @@ const renderText = (text, className, baseWeight = 400) => {
     </span>
   ));
 };
+const createWallpaer=()=>{
+  const body=document.body
+  const index=Math.floor(Math.random()*(NumberOfWallpapers))+1
+  body.style.backgroundImage=`url("/images/wallpaper${index}.jpg")`
+  console.log(index)
+}
 const setupTextHover=(container,type)=>{
     if(!container) return ()=>{};
     const letters=container.querySelectorAll("span");
@@ -61,6 +68,9 @@ const Welcome = () => {
         titleCleanup()
         subtitleCleanup()
     }
+  },[])
+  useEffect(()=>{
+    createWallpaer()
   },[])
   return (
     <section id="welcome">
