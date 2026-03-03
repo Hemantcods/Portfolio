@@ -3,11 +3,22 @@ import { dockApps } from "@constants";
 import { Tooltip } from "react-tooltip";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Diameter } from "lucide-react";
+import useWindowStore from "@store/window";
 const Dock = () => {
   const DockRef = useRef(null);
+  const {openWindow,closeWindow,windows}=useWindowStore()
   const toggleApp = (app) => {
-    // TODO : Implement Open Window Logic
+    if(!app.canOpen) return;
+    const window=windows[app.id]
+    if(!window) {
+      console.error(`Window with id ${app.id} not found`)
+      return;
+    }
+    if(window.isOpen){
+      closeWindow(app.id)
+    }else{
+      openWindow(app.id)
+    }
   };
   useGSAP(() => {
     const dock = DockRef.current;
