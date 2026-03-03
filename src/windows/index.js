@@ -1,3 +1,4 @@
 import Terminal from "./Terminal.jsx";
+import Safari from './Safari.jsx';
 
-export {Terminal}
+export {Terminal,Safari }
