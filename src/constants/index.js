@@ -15,7 +15,7 @@ const navLinks = [
     type: "resume",
   },
 ];
-const NumberOfWallpapers=3
+const NumberOfWallpapers = 3;
 const navIcons = [
   {
     id: 1,
@@ -78,8 +78,7 @@ const blogPosts = [
   {
     id: 1,
     date: "Sep 2, 2025",
-    title:
-      "How my first Hackathon(Online) Went",
+    title: "How my first Hackathon(Online) Went",
     image: "/images/blog1.png",
     link: "https://github.com/hemantcods",
   },
@@ -106,7 +105,7 @@ const techStack = [
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "CSS","Material UI","Figma"],
+    items: ["Tailwind CSS", "CSS", "Material UI", "Figma"],
   },
   {
     category: "Backend",
@@ -209,7 +208,7 @@ export {
   socials,
   photosLinks,
   gallery,
-  NumberOfWallpapers
+  NumberOfWallpapers,
 };
 
 const WORK_LOCATION = {
@@ -222,7 +221,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "LingoBridge - Browser Extension",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -230,25 +229,26 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "LingoBridge.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "LingoBridge is a smart browser extension designed to break language barriers instantly while you browse.",
+            "Instead of switching tabs or copying text into translators, it lets you translate content directly on the page in real time.",
+            "Think of it like having a personal language assistant quietly working in the background of your browser.",
+            "It focuses on speed, simplicity, and seamless user experience—making translation feel natural, not disruptive.",
+            "Built with modern web technologies, it’s lightweight, efficient, and designed to integrate smoothly into your daily workflow.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "LingoBridge.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://lingo-bridge-dusky.vercel.app/",
           position: "top-10 right-20",
         },
         {
@@ -424,10 +424,15 @@ const ABOUT_LOCATION = {
       subtitle: "Meet the Developer Behind the Code",
       image: "/images/adrian.jpg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey! I’m Hemant 👋, a developer who builds things, breaks them, and rebuilds them better than before.",
+
+        "I work with React and Python—crafting interactive web apps on the frontend while experimenting with automation, AI, and system-level stuff on the backend.",
+
+        "I’m deep into DSA, Linux ricing, AI tools, and building projects that actually push my limits. If there’s a bug, I’m not scared of it—I’m curious about it.",
+
+        "I believe the best way to learn tech is to break it first. (Yes, I’ve reinstalled Windows because of 'experiments' 😅)",
+
+        "My goal? To build like a hacker, think like an engineer, and innovate like Tony Stark.",
       ],
     },
   ],
