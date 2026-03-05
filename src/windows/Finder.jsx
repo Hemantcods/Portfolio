@@ -10,6 +10,7 @@ import useWindowStore from "@store/window";
 const Finder = () => {
   const {openWindow} = useWindowStore()
   const { activeLocation, setActiveLocation } = useLocationStore();
+  if (!activeLocation) return null;
   const renderList = (name, items) => (
     <div>
       <h3>{name}</h3>

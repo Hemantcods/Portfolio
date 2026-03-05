@@ -126,29 +126,36 @@ const socials = [
     id: 1,
     text: "Github",
     icon: "/icons/github.svg",
-    bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    bg: "#000000",
+    link: "https://github.com/Hemantcods",
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    text: "Leetcode",
+    icon: "/icons/leetcode.svg",
+    bg: "#00dd00",
+    link: "https://leetcode.com/u/hemantcods/",
   },
   {
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    bg: "#000000",
+    link: "https://x.com/yadav_hema35495",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/hemant-yadav-b2100632b/",
+  },
+  {
+    id: 5,
+    text: "Instagram",
+    icon: "/icons/instagram.svg",
+    bg: "#dd00a5",
+    link: "https://www.instagram.com/official._.hemantydv/",
   },
 ];
 
@@ -394,7 +401,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/eren2.jpg",
     },
     {
       id: 2,
@@ -403,7 +410,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/eren.jpg",
     },
     {
       id: 3,
@@ -412,7 +419,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/eren3.jpg",
     },
     {
       id: 4,
@@ -422,7 +429,7 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/eren2.jpg",
       description: [
         "Hey! I’m Hemant 👋, a developer who builds things, breaks them, and rebuilds them better than before.",
 

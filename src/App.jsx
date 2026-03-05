@@ -1,8 +1,8 @@
 import React from 'react'
-import { Navbar, Welcome,Dock } from '@components'
+import { Navbar, Welcome,Dock,Home } from '@components'
 import { Draggable } from 'gsap/Draggable'
 import gsap from 'gsap'
-import {Terminal,Safari,Resume,Finder,CreateText,Image} from '@windows'
+import {Terminal,Safari,Resume,Finder,CreateText,Image,Contact} from '@windows'
 gsap.registerPlugin(Draggable)
 const App = () => {
   return (
@@ -16,6 +16,8 @@ const App = () => {
       <Finder/>
       <CreateText/>
       <Image/>
+      <Contact/>
+      <Home/>
     </main>
   )
 }

@@ -4,5 +4,6 @@ import Resume from "./Resume.jsx";
 import Finder from "./Finder.jsx";
 import CreateText from "./Text.jsx";
 import Image from "./Image.jsx";
+import Contact from "./Contact.jsx";
 
-export {Terminal,Safari,Resume,Finder,CreateText,Image}
+export {Terminal,Safari,Resume,Finder,CreateText,Image,Contact}
