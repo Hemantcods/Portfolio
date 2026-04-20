@@ -5,5 +5,5 @@ import Finder from "./Finder.jsx";
 import CreateText from "./Text.jsx";
 import Image from "./Image.jsx";
 import Contact from "./Contact.jsx";
-
-export {Terminal,Safari,Resume,Finder,CreateText,Image,Contact}
+import  Archive  from "./Archive.jsx";
+export {Terminal,Safari,Resume,Finder,CreateText,Image,Contact,Archive}

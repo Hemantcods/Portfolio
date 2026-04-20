@@ -53,7 +53,7 @@ const Finder = () => {
         {
           activeLocation.children.map((item)=>(
             <li key={item.id} className={item.position} onClick={()=>openItem(item)}>
-                <img src={item.icon} className="w-4"alt={item.name} />
+                <img src={item.icon} className="w-10"alt={item.name} />
                 <p>{item.name}</p>
             </li>
           ))
